@@ -7,22 +7,38 @@
     <style>
         body {
             margin: 0;
-            height: 200vh; /* Altura suficiente para permitir scroll */
+            min-height: 100vh; /* Cambia a min-height para adaptarse al contenido */
             background-image: url('fondo.jpg'); /* Nombre de tu imagen */
             background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
             background-position: center; /* Centra la imagen */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-attachment: scroll; /* Permite el desplazamiento */
+            background-attachment: fixed; /* Para un efecto de fondo fijo */
         }
 
         /* Media Query para pantallas más pequeñas */
         @media (max-width: 600px) {
             body {
-                height: 300vh; /* Aumenta la altura en pantallas más pequeñas */
+                background-size: contain; /* Cambia a contain para que la imagen se ajuste */
+                background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas */
             }
+        }
+        
+        /* Opcional: agregar estilo para un contenido centrado */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Ocupa toda la altura del body */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto */
         }
     </style>
 </head>
 <body>
+    <div class="content">
+        <h1>Bienvenido</h1>
+        <p>Este es un fondo de imagen responsivo.</p>
+    </div>
 </body>
 </html>
+
