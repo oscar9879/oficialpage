@@ -20,15 +20,18 @@
             body {
                 background-size: contain; /* Cambia a contain para que la imagen se ajuste */
                 background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas */
+                height: auto; /* Asegura que el body crezca con el contenido */
+                padding: 20px; /* Agrega un poco de padding para el contenido */
             }
         }
         
         /* Opcional: agregar estilo para un contenido centrado */
         .content {
             display: flex;
+            flex-direction: column; /* Permite que el contenido se apile verticalmente */
             justify-content: center;
             align-items: center;
-            height: 100%; /* Ocupa toda la altura del body */
+            min-height: 200vh; /* Asegura que haya suficiente espacio para scroll */
             color: white; /* Color del texto */
             text-align: center; /* Centra el texto */
         }
@@ -38,6 +41,10 @@
     <div class="content">
         <h1>Bienvenido</h1>
         <p>Este es un fondo de imagen responsivo.</p>
+        <p>Aquí hay más contenido para permitir el desplazamiento.</p>
+        <p>Agrega más texto o elementos según sea necesario.</p>
+        <p>¡Sigue desplazándote!</p>
+        <p>Esto debería permitirte ver más del fondo.</p>
     </div>
 </body>
 </html>
