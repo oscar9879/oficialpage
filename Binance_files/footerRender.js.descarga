@@ -1,1 +1,0 @@
-window.hydarteHandler(React.createElement(window.footerUMD.default), document.getElementById('__APP_FOOTER'))
