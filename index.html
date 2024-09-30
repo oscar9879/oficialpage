@@ -7,45 +7,46 @@
     <style>
         body {
             margin: 0;
-            min-height: 100vh; /* Cambia a min-height para adaptarse al contenido */
             background-image: url('fondo.jpg'); /* Nombre de tu imagen */
             background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
             background-position: center; /* Centra la imagen */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
-            background-attachment: fixed; /* Para un efecto de fondo fijo */
+            background-attachment: scroll; /* Permite que la imagen se desplace con el contenido */
+        }
+
+        /* Estilo para el contenido */
+        .content {
+            min-height: 200vh; /* Asegura que haya suficiente espacio para scroll */
+            color: white; /* Color del texto */
+            text-align: center; /* Centra el texto */
+            display: flex; /* Usar flexbox para centrar el contenido */
+            flex-direction: column; /* Apilar elementos verticalmente */
+            justify-content: center; /* Centra verticalmente */
+            align-items: center; /* Centra horizontalmente */
+            padding: 20px; /* Agrega un poco de padding */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
         }
 
         /* Media Query para pantallas más pequeñas */
         @media (max-width: 600px) {
             body {
                 background-size: contain; /* Cambia a contain para que la imagen se ajuste */
-                background-attachment: scroll; /* Cambia a scroll en pantallas pequeñas */
-                height: auto; /* Asegura que el body crezca con el contenido */
-                padding: 20px; /* Agrega un poco de padding para el contenido */
+                background-position: center top; /* Centra la imagen en la parte superior */
             }
-        }
-        
-        /* Opcional: agregar estilo para un contenido centrado */
-        .content {
-            display: flex;
-            flex-direction: column; /* Permite que el contenido se apile verticalmente */
-            justify-content: center;
-            align-items: center;
-            min-height: 200vh; /* Asegura que haya suficiente espacio para scroll */
-            color: white; /* Color del texto */
-            text-align: center; /* Centra el texto */
+
+            .content {
+                padding: 10px; /* Reduce el padding */
+                min-height: auto; /* Permite que el contenido crezca con el texto */
+            }
         }
     </style>
 </head>
 <body>
     <div class="content">
         <h1>Bienvenido</h1>
-        <p>Este es un fondo de imagen responsivo.</p>
-        <p>Aquí hay más contenido para permitir el desplazamiento.</p>
-        <p>Agrega más texto o elementos según sea necesario.</p>
-        <p>¡Sigue desplazándote!</p>
-        <p>Esto debería permitirte ver más del fondo.</p>
+        <p>DESCARGA AQUI TU APLICACION</p>
+  
+        <p>link pendiente</p>
     </div>
 </body>
 </html>
-
